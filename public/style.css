@@ -1,0 +1,93 @@
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 50px;
+background-color: black;
+color: white;
+}
+
+/* From Uiverse.io by iZOXVL */ 
+.boton-elegante {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #42da24;
+  color: #000000;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  align-items: flex;
+  align-content: flex;
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(14, 212, 8, 0.25) 0%,
+    rgba(4, 85, 4, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #2b8d17;
+  background: #117e0d;
+}
+
+
+button {
+border: none;
+background-color: #42da24;
+color: rgb(0, 0, 0);
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+font-size: 16px;
+text-align: flex;
+align-content: flex;
+
+}
+
+
+#audioPlayer {
+margin: 20px;
+}
+
+#result {
+font-weight: bold;
+margin: 20px;
+
+}
+
+.audio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.options{
+  background-color: #000000;
+}
+
+#albumImage{
+  position: center;
+  width: 200px;
+  height: 150px;
+  margin-left: 730px;
+}
